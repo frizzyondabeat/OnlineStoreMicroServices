@@ -1,0 +1,21 @@
+server:
+  port: 3031
+spring:
+  application:
+    name: order-service
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    database: mysql
+    generate-ddl: true
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/orders
+    username: root
+    password: tomriddle

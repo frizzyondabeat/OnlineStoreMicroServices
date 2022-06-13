@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      database: test
+      authentication-database: admin
+      username: rootuser
+      password: rootpass
+      auto-index-creation: true
