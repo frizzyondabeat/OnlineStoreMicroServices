@@ -5,8 +5,6 @@ spring:
     name: inventory-service
   jpa:
     show-sql: true
-    hibernate:
-      ddl-auto: create-drop
     database: mysql
     generate-ddl: true
     properties:
@@ -14,8 +12,17 @@ spring:
         show_sql: true
         format_sql: true
         dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create-drop
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/inventory
     username: root
     password: tomriddle
+#  flyway:
+#    url: jdbc:mysql://localhost:3306/inventory
+#    user: root
+#    password: tomriddle
+#    default-schema: inventory
+#    create-schemas: true
+
