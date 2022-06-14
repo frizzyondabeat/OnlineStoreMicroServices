@@ -2,7 +2,7 @@ server:
   port: 3032
 spring:
   application:
-    name: order-service
+    name: inventory-service
   jpa:
     show-sql: true
     hibernate:

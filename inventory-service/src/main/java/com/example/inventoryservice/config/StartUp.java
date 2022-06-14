@@ -23,7 +23,7 @@ public class StartUp {
                 inventory -> log.error("SkuCode already exists"),
                 () -> inventoryRepository.save(Inventory.builder()
                                 .skuCode(iPhone13)
-                                .quantity(100)
+                                .quantity(0)
                         .build()
                 )
         );
